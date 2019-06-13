@@ -1,11 +1,15 @@
 from selenium import webdriver
 from hover_tests import hover_tests
 from scroll_tests import scroll_tests
+from click_tests import click_tests
+from aspect_tests import aspect_tests
 
 
 
 def main():
+    # my website
     url = "https://conorjamesrogers.github.io/"
+
     # 
     # 
     # Chrome Tests
@@ -13,7 +17,7 @@ def main():
     # 
     chr_driver = webdriver.Chrome(executable_path='./web_drivers/chromedriver74')
 
-    # gets which website (my website)
+    # gets which website
     chr_driver.get(url)
     chr_driver.set_page_load_timeout(10)
 

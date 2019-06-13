@@ -52,11 +52,7 @@ def scroll_tests(driver):
         raise WebDriverException()
         # print("scroll except")
         driver.close()
-    # Tests for future implimentation:
-    #     click all buttons (requires reset)
-    #     scrolling down
-    #     rapid scrolling
-    #     window frame change for UI break?
+   
 
 
 
