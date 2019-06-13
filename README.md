@@ -4,15 +4,15 @@ Uses Selenium-WebDriver
 
 To run:
 
-	get your webdriver! [link to chrome webdrivers](http://chromedriver.chromium.org/downloads)
+get your webdriver! [link to chrome webdrivers](http://chromedriver.chromium.org/downloads)
 
-	save it to `/web_drivers/`
+save it to `/web_drivers/`
 
-	then:
+then:
 
-	```
-	pip install -U selenium
+```
+pip install -U selenium
 
-	python driver.py
-	```
+python driver.py
+```
 
