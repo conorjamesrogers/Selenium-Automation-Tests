@@ -8,14 +8,16 @@ from hover_tests import hover_tests
 from scroll_tests import scroll_tests
 from click_tests import click_tests
 from aspect_tests import aspect_tests
+from const import TIME_OUT, CHROME_DRIVER, FIREFOX_DRIVER, URL
+
+
+
 
 
 
 def main():
     # my website
-    url = "https://conorjamesrogers.github.io/"
-    TIME_OUT = 10
-    CHROME_DRIVER_LOCATION = "./web_drivers/chromedriver74"
+
 
     # 
     # 
@@ -23,16 +25,16 @@ def main():
     # 
     # 
     try:
-        chr_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_LOCATION)
+        chr_driver = webdriver.Chrome(executable_path="./web_drivers/"+CHROME_DRIVER)
     except WebDriverException:
         print("Driver not found in web_drivers?")
 
         # gets which website
-    chr_driver.get(url)
+    chr_driver.get(URL)
     try:
         chr_driver.set_page_load_timeout(TIME_OUT)
     except TimeoutException:
-        print("WebPage '"+url+"' took too much time! (>"+str(TIME_OUT)+")")
+        print("WebPage '"+URL+"' took too much time! (>"+str(TIME_OUT)+")")
 
 
     # Tests:

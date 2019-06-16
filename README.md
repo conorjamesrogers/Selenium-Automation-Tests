@@ -6,7 +6,9 @@ To run:
 
 get your webdriver! [link to chrome webdrivers](http://chromedriver.chromium.org/downloads)
 
-save it to `/web_drivers/`
+unpack and save to `/web_drivers/`
+
+update `const.py` driver constant
 
 then:
 
